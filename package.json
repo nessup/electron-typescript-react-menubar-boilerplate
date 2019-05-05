@@ -1,6 +1,6 @@
 {
-  "name": "electron-react-typescript",
-  "version": "0.0.4",
+  "name": "electron-react-typescript-menubar",
+  "version": "0.0.1",
   "description": "",
   "main": "./dist/main.js",
   "scripts": {
@@ -13,7 +13,6 @@
     "prestart": "npm run build",
     "start": "electron .",
     "lint": "tslint '{src,test,mocks}/**/*.{ts,tsx}' --project ./tsconfig.json",
-    "precommit": "lint-staged",
     "test": "jest '(\\/test\\/(?!e2e/)).*'",
     "pretest:e2e": "npm run build",
     "test:e2e": "jest '(\\/test\\/e2e/).*'",
@@ -125,6 +124,7 @@
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {
+    "menubar": "^5.2.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.7",
